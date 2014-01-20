@@ -6,7 +6,7 @@
 # @license BSD3
 # @modified 17jan2014
 
-CC=gcc
+CC=g++
 CFLAGS=-I.
 ODIR=../build
 BDIR=../bin
