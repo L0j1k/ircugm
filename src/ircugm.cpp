@@ -18,6 +18,10 @@
  */
 
 #include <iostream>
+#include "ircugm.h"
+#include "irc.h"
+#include "graphmap.h"
+#include "output.h"
 
 using namespace std;
 

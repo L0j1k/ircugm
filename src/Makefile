@@ -6,10 +6,10 @@
 # @license BSD3
 # @modified 17jan2014
 
-CC=g++
-CFLAGS=-I.
-ODIR=../build
-BDIR=../bin
+CC = g++
+CFLAGS = -I.
+ODIR = ../build
+BDIR = ../bin
 
 DEPS = ircugm.h irc.h graphmap.h output.h
 OBJ = ircugm.cpp irc.cpp graphmap.cpp output.cpp
