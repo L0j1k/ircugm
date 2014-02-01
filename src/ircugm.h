@@ -21,13 +21,14 @@
 #ifndef IRCUGM_H_
 #define IRCUGM_H_
 
+// stuff declarations
+
+typedef enum { TRUE, FALSE } boolean;
+typedef struct _pOptions pOptions;
+
 // function declarations
 
-bool getOptions( pOptions );
+boolean getOptions( pOptions );
 void usage( void );
-
-// extra declarations
-
-typedef struct _pOptions pOptions;
 
 #endif

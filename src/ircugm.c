@@ -30,21 +30,38 @@ typedef struct _pOptions {
   char *channel;
   char *nick;
   int port;
-  bool rollover;
+  boolean rollover;
   char *remoteServer;
   char *username;
 } pOptions;
 
-bool getOptions() {
-  return true;
+boolean getOptions( pOptions CLIOptions ) {
+  return TRUE;
 }
 
 void usage() {
+  const char *ircugm_appVersion = "v0.1.0a";
+  printf(
+    "ircugm %s\n"
+    "(C) 2013-2014 <L0j1k@L0j1k.com>\n\n"
+    "Usage: ircugm [-r] [-a altnick] [-c channel] [-n nick]\n"
+    "  [-s remote_server[:port]] [-p port]\n"
+    "  [[channel]@[remote_server[:port]]]\n\n"
+    "Option Summary:\n"
+    "  -a    altnick\n"
+    "  -c    channel on remote server\n"
+    "  -n    primary nick\n"
+    "  -p    port\n"
+    "  -r    continue session and rollover previous settings\n"
+    "  -s    remote server\n",
+    ircugm_appVersion
+  );
 }
 
 int main( int argc, char** argv ) {
+  pOptions CLIOptions;
 
-  if(!getOptions()) {
+  if(!getOptions( CLIOptions )) {
     usage();
   }
 
