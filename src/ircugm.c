@@ -18,13 +18,11 @@
  * @modified 20jan2014
  */
 
-#include <iostream>
+#include <stdio.h>
 #include "ircugm.h"
 #include "irc.h"
 #include "graphmap.h"
 #include "output.h"
-
-using namespace std;
 
 bool getOptions() {
   return true;
