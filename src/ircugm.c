@@ -42,11 +42,11 @@ boolean getOptions( pOptions CLIOptions ) {
 void usage() {
   const char *ircugm_appVersion = "v0.1.0a";
   printf(
-    "ircugm %s\n"
+    "ircugm v%s-%s\n"
     "(C) 2013-2014 <L0j1k@L0j1k.com>\n\n"
     "Usage: ircugm [-r] [-a altnick] [-c channel] [-n nick]\n"
     "  [-s remote_server[:port]] [-p port]\n"
-    "  [[channel]@[remote_server[:port]]]\n\n"
+    "  [[nick@][remote_server[:port][/channel]]]\n\n"
     "Option Summary:\n"
     "  -a    altnick\n"
     "  -c    channel on remote server\n"
@@ -54,7 +54,8 @@ void usage() {
     "  -p    port\n"
     "  -r    continue session and rollover previous settings\n"
     "  -s    remote server\n",
-    ircugm_appVersion
+    IRCUGM_VERSION,
+    IRCUGM_VERSION_PHASE
   );
 }
 

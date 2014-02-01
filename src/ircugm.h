@@ -21,6 +21,14 @@
 #ifndef IRCUGM_H_
 #define IRCUGM_H_
 
+#ifndef IRCUGM_VERSION
+#define IRCUGM_VERSION "0.1.0"
+#endif
+
+#ifndef IRCUGM_VERSION_PHASE
+#define IRCUGM_VERSION_PHASE "alpha"
+#endif
+
 // stuff declarations
 
 typedef enum { TRUE, FALSE } boolean;

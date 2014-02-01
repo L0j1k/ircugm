@@ -8,7 +8,7 @@ ircugm is automated software for learning about IRC clients and then producing u
 ```bash
 usage: ircugm [-r] [-a altnick] [-c channel] [-n nick] 
 	[-s remote_server[:port]] [-p port] 
-	[[channel]@[remote_server[:port]]]
+	[[nick@][remote_server[:port][/channel]]]
 Option Summary:
   -a	alternate nick
   -c	channel on remote server
@@ -20,10 +20,10 @@ Option Summary:
 
 ## Examples
 
-The following command starts ircugm in the #gcc channel on the freenode IRC network with default settings.
+The following command starts ircugm in the #gcc channel on the freenode IRC network on port 6697 with nickname "foo".
 
 ```bash
-ircugm gcc@irc.freenode.net
+ircugm foo@irc.freenode.net:6697/gcc
 ```
 
 The following command starts ircugm, continuing with the last data file, and connecting to a channel named #help on an IRC server on port 9898 at irc.example.com. ircugm is going to use the nick 'foo' and alternate nick 'bar' upon connection.
