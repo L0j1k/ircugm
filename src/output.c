@@ -5,5 +5,5 @@
  * @version 0.0.1a
  * @license bsd3
  * @created 23may2013
- * @modified 20jan2014
+ * @modified 31jan2014
  */

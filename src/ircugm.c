@@ -15,14 +15,25 @@
  * @version 0.0.1a
  * @license bsd3
  * @created 23may2013
- * @modified 20jan2014
+ * @modified 31jan2014
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "ircugm.h"
 #include "irc.h"
 #include "graphmap.h"
 #include "output.h"
+
+typedef struct _pOptions {
+  char *altnick;
+  char *channel;
+  char *nick;
+  int port;
+  bool rollover;
+  char *remoteServer;
+  char *username;
+} pOptions;
 
 bool getOptions() {
   return true;

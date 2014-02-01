@@ -4,17 +4,17 @@
 # @version 0.0.1a
 # @created 23may2013
 # @license BSD3
-# @modified 17jan2014
+# @modified 31jan2014
 
-CC = g++
+CC = gcc
 CFLAGS = -I.
 ODIR = ../build
 BDIR = ../bin
 
 DEPS = ircugm.h irc.h graphmap.h output.h
-OBJ = ircugm.cpp irc.cpp graphmap.cpp output.cpp
+OBJ = ircugm.c irc.c graphmap.c output.c
 
-$(ODIR)/%.o: %.cpp $(DEPS)
+$(ODIR)/%.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 ircugm: $(OBJ)

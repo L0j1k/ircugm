@@ -15,13 +15,19 @@
  * @version 0.0.1a
  * @license bsd3
  * @created 23may2013
- * @modified 17jan2014
+ * @modified 31jan2014
  */
 
 #ifndef IRCUGM_H_
 #define IRCUGM_H_
 
-bool getOptions(void);
-void usage(void);
+// function declarations
+
+bool getOptions( pOptions );
+void usage( void );
+
+// extra declarations
+
+typedef struct _pOptions pOptions;
 
 #endif
