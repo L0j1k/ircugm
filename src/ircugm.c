@@ -1,5 +1,5 @@
 /**
- * ircugm -- IRC User Grapher/Mapper
+ * @project ircugm -- IRC User Grapher/Mapper
  * This utility is automated software used to idle in IRC servers and 
  * collect information about the users in a channel, then perform 
  * operations on the data so that it may be more easily visualized.
@@ -13,6 +13,7 @@
  * 
  * @author L0j1k (l0j1k@l0j1k.com)
  * @version 0.0.1a
+ * @license bsd3
  * @created 23may2013
  * @modified 20jan2014
  */
