@@ -11,6 +11,6 @@
 #ifndef OUTPUT_H_
 #define OUTPUT_H_
 
-// ... definitions
+// ... declarations
 
 #endif

@@ -11,6 +11,6 @@
 #ifndef GRAPHMAP_H_
 #define GRAPHMAP_H_
 
-// ... definitions
+// ... declarations
 
 #endif

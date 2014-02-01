@@ -11,6 +11,6 @@
 #ifndef IRC_H_
 #define IRC_H_
 
-// ... definitions here
+// ... declarations here
 
 #endif
