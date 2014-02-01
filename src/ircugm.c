@@ -42,7 +42,7 @@ boolean getOptions( pOptions CLIOptions ) {
 void usage() {
   const char *ircugm_appVersion = "v0.1.0a";
   printf(
-    "ircugm v%s-%s\n"
+    "ircugm v%s_%s\n"
     "(C) 2013-2014 <L0j1k@L0j1k.com>\n\n"
     "Usage: ircugm [-r] [-a altnick] [-c channel] [-n nick]\n"
     "  [-s remote_server[:port]] [-p port]\n"

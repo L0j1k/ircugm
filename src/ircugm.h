@@ -26,7 +26,7 @@
 #endif
 
 #ifndef IRCUGM_VERSION_PHASE
-#define IRCUGM_VERSION_PHASE "alpha"
+#define IRCUGM_VERSION_PHASE "pre-alpha"
 #endif
 
 // stuff declarations
