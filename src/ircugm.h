@@ -18,6 +18,10 @@
  * @modified 17jan2014
  */
 
-bool getOptions(void);
+#ifndef IRCUGM_H_
+#define IRCUGM_H_
 
+bool getOptions(void);
 void usage(void);
+
+#endif

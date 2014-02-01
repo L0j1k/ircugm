@@ -7,3 +7,10 @@
  * @created 23may2013
  * @modified 20jan2014
  */
+
+#ifndef GRAPHMAP_H_
+#define GRAPHMAP_H_
+
+// ... definitions
+
+#endif

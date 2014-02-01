@@ -7,3 +7,10 @@
  * @created 23may2013
  * @modified 20jan2014
  */
+
+#ifndef OUTPUT_H_
+#define OUTPUT_H_
+
+// ... definitions
+
+#endif

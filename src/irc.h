@@ -7,3 +7,10 @@
  * @created 23may2013
  * @modified 20jan2014
  */
+
+#ifndef IRC_H_
+#define IRC_H_
+
+// ... definitions here
+
+#endif
