@@ -15,32 +15,28 @@
  * @version 0.0.1a
  * @license bsd3
  * @created 23may2013
- * @modified 31jan2014
+ * @modified 01feb2014
  */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "ircugm.h"
 #include "irc.h"
 #include "graphmap.h"
 #include "output.h"
 
-typedef struct _pOptions {
-  char *altnick;
-  char *channel;
-  char *nick;
-  int port;
-  boolean rollover;
-  char *remoteServer;
-  char *username;
-} pOptions;
+typedef struct _CLIOptions {
+  char altnick[50], channel[50], nick[50];
+  int port, rollover;
+  char remoteServer[100], username[50];
+} CLIOptions;
 
-boolean getOptions( pOptions CLIOptions ) {
-  return TRUE;
+int getOptions( CLIOptions options ) {
+  return 1;
 }
 
 void usage() {
-  const char *ircugm_appVersion = "v0.1.0a";
   printf(
     "ircugm v%s_%s\n"
     "(C) 2013-2014 <L0j1k@L0j1k.com>\n\n"
@@ -59,11 +55,18 @@ void usage() {
   );
 }
 
-int main( int argc, char** argv ) {
-  pOptions CLIOptions;
+int main( int argc, char **argv ) {
+  CLIOptions Program_Options;
+  IRCConnection *Primary_Connection = malloc(sizeof(Primary_Connection));
 
-  if(!getOptions( CLIOptions )) {
+  if(getOptions(Program_Options)) {
     usage();
+  }
+
+  strcpy(Primary_Connection->host, "host");
+
+  if(connCreate(Primary_Connection)) {
+    return 1;
   }
 
   return 0;

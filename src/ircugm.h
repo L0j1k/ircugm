@@ -15,7 +15,7 @@
  * @version 0.0.1a
  * @license bsd3
  * @created 23may2013
- * @modified 31jan2014
+ * @modified 01feb2014
  */
 
 #ifndef IRCUGM_H_
@@ -29,14 +29,13 @@
 #define IRCUGM_VERSION_PHASE "pre-alpha"
 #endif
 
-// stuff declarations
+// general declarations
 
-typedef enum { TRUE, FALSE } boolean;
-typedef struct _pOptions pOptions;
+typedef struct _CLIOptions CLIOptions;
 
 // function declarations
 
-boolean getOptions( pOptions );
+int getOptions( CLIOptions );
 void usage( void );
 
 #endif
