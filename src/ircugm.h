@@ -35,7 +35,8 @@ typedef struct _CLIOptions CLIOptions;
 
 // function declarations
 
-int getOptions( CLIOptions );
+int checkOptions( CLIOptions );
+int getOptions( int, char**, CLIOptions );
 void usage( void );
 
 #endif
